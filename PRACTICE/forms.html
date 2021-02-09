@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .fieldset {
+            width:300px;
+        }
+    </style>
+</head>
+
+<body>
+    <form>
+        <label for="color">Color:</label>
+        <input type="text" name="color" id="color" placeholder="enter color">
+
+    </form>
+    <br>
+    <form>
+        <label for="password">Enter password:</label>
+<input type="password" name="password" id="password" placeholder="your password">
+    </form>
+    <br>
+   <form>
+       <label type="text" name="country"id="country">Choose country:</label>
+        <input type="radio" name="country" id="Serbia" value="Serbia">
+        <label for="Serbia">Serbia</label>
+        <input type="radio" name="country" id="Romania"value="Romania">
+        <label for="Romania">Romania</label>
+        <input type="radio" name="Croatia" id="Croatia" value="Croatia">
+        <label for="Croatia">Croatia</label>
+        </form>
+        <br>
+        <form>
+            <input type="checkbox" name="question"value="like" id="question">
+            <label for="question">I like HTML</label>
+        </form>
+        <br>
+        <form>
+            <label for="submit">CLICK HERE:</label>
+            <input type="submit" value="submit" id="submit">
+        </form>
+        <br>
+        <label for="number">How many tits on a cow?</label>
+        <input type="number" name="quantity" min="1" max="5">
+        <br>
+        <br>
+        <label for="color">What color is your mom's bra?</label>
+        <input type="color" name="favcolor">
+        <br>
+        <br>
+        <label for="points">How big is a horse's dick?</label>
+        <input type="range" name="points" min="0" max="10">
+        <br>
+        <br>
+        <textarea name="description" id="description">Lorem ipsum dolor sit amet pula-n pizda Gigi Marga</textarea>
+        <br>
+        <br>
+        <button type="button">
+            <img src="coffee.jpg" alt="button" width="10px" height="10px">
+        </button>
+        <br>
+        <br>
+        <select>
+<optgroup label="Europe">
+    <option value>Romania</option>
+    <option value>Hungary</option>
+    <option value>France</option>
+</optgroup>
+<optgroup label="Asia">
+<option value="Korea">Korea</option>
+<option value="Japan">Japan</option>
+<option value="Thailand">Thailand</option>
+</optgroup>
+</select>
+<br>
+<br>
+<div class="fieldset">
+<fieldset>
+<legend><b>Personal information:</b></legend>
+<label for="name">First name</label>
+<input type="text" name="name" id="name"><br>
+<label for="surname">Last name</label>
+<input type="text" name="surname" id="surname">
+</fieldset>
+<fieldset>
+    <legend><b>Contact:</b></legend>
+    <label for="email">Email</label><br>
+    <input type="text" name="email" id="email"><br>
+    <label for="phone">Phone</label><br>
+    <input type="text" name="phone" id="name">
+</fieldset>
+</div>
+</body>
+
+</html>

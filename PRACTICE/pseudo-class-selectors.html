@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pseudo Class Selectors</title>
+    <style>
+      a:link {
+        color: tomato;
+      }
+      a:visited {
+        color: skyblue;
+      }
+      a:hover {
+        color: darkblue;
+      }
+      a:focus {
+        text-decoration: wavy;
+        color: black;
+      }
+      a:active {
+        color: chartreuse;
+      }
+      input[type="text"] {
+          width:100%;
+        padding: 10px;
+        border:solid 2px rgb(88, 95, 97);
+        margin: 5px 0px 5px 0px;
+      }
+      input[type="text"]:hover {
+          border:solid 2px black;
+      }
+      input[type="text"]:focus {
+          border: solid 2px rgb(236, 245, 236);
+      }
+      input[type="text"]:disabled {
+          background-color: rgb(78, 76, 83);
+      }
+      input[type="submit"] {
+          padding: 5px;
+          border: solid 2px yellow;
+          background-color: red;
+          display: block;
+          margin-bottom: 2px;
+      }
+      input[type="submit"]:hover {
+border: solid 4px yellow;
+cursor: pointer;
+      }
+      input[type="submit"]:focus{
+          border: solid 4px brown;
+      }
+      input[type="submit"]:active {
+          border: solid 4px blue;
+      }
+      input[type="checkbox"]:checked+label{
+          color:red;
+      }
+      #contact-wrapper {
+          width:480px;
+          margin:auto;
+      }
+    </style>
+  </head>
+  <body>
+    <a href="https://www.duckduckgo.com/">Go to DuckDuckGo</a>
+    <a href="https://www.google.com/">Go to Google</a>
+    <a href="https://www.google.com/">Go to Google</a>
+    <div id="contact-wrapper">
+      <form>
+        <input type="text" name="name" id="name" placeholder="Name" />
+        <input type="text" name="email" id="email" placeholder="Email" />
+        <input
+          disabled
+          type="text"
+          name="subject"
+          id="subject"
+          placeholder="Subject (disabled)"
+        />
+        <input type="submit" class="button" id="button" placeholder="SEND" />
+        <input type="checkbox" id="checkbox" name="subscribe" />
+        <label for="checkbox">Yes, I would like to know more</label>
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Transformations</title>
+    <style>
+      .box {
+        width: 180px;
+        height: 140px;
+        margin-bottom:100px;
+        background-color: turquoise;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 16px;
+      }
+      #first-div {
+          transform: none;
+      }
+      #second-div {
+          transform: translate(50px, 50px);
+      }
+      #third-div {
+          transform: rotate(-20deg);
+      }
+      #fourth-div {
+          transform: rotate(-20deg);
+          transform-origin: 0px 0px;
+      }
+      #fifth-div {
+          transform: scale(0.5,2)
+      }
+      #sixth-div {
+          transform: skew(20deg,10deg)
+      }
+    </style>
+  </head>
+  <body>
+    <div id="first-div" class="box"></div>
+    <div id="second-div" class="box"></div>
+    <div id="third-div" class="box"></div>
+    <div id="fourth-div" class="box"></div>
+    <div id="fifth-div" class="box"></div>
+    <div id="sixth-div" class="box"></div>
+
+  </body>
+</html>

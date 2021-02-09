@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Langar&display=swap');
+html {
+    scroll-behavior: smooth;
+}
 body {
     background-color: bisque;
     font-family: cursive;
@@ -5,12 +10,31 @@ body {
 h1 {
         color:darkred;
         text-align: center;
-        font-size: 2cm;
-
+        font-size: 250%;
+        font-family: 'Noto Sans JP', sans-serif;
+        font-weight: bolder;
             }
     h2 {
         color:maroon;
+        font-family: 'Langar', cursive;
+        font-size: 150%;
+        font-weight: normal;
     }
     h3 {
         color: midnightblue;
+        font-family: 'Langar', cursive;
+        font-size: 120%;
+        font-weight: lighter;
+        text-decoration: underline;
+    }
+    #old-price {
+text-decoration: line-through;
+text-decoration-color: brown;
+text-decoration-thickness: 3px;
+text-decoration-style: solid;
+    }
+    blockquote {
+        font-style: italic;
+        font-size: 1.3em;
+        color: rgb(141, 94, 8);
     }

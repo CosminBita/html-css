@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute selectors</title>
+    <style>
+    
+      div[id*="div"] {
+          background-color: tomato;
+          height:300px;
+          width:400px;
+      }
+      a[href^="http://www.link-group.eu"] {
+          text-decoration: none;
+          font-style: oblique;
+      }
+      a[href$="about-us-0"] {
+          color:teal;
+      }
+      a[target] {
+          color:crimson
+      }
+      a[target="_self"] {
+          color:yellow;
+      }
+      .animate {
+          color:red;
+      }
+      a[title~="link"] {
+          font-weight: bold;
+      }
+      [class|="top"] {
+          color:saddlebrown;
+      }
+          #first-div:hover{
+              background-color: black;
+              cursor: pointer;
+          }
+          div:focus {
+              color:darkblue;
+          }
+      
+    </style>
+  </head>
+  <body>
+    <a href="http://www.link-group.eu" target="_blank" title="link">Link Group</a>
+    <a href="http://www.link-group.eu/careers" target="_self" title="link careers">Link Careers</a>
+    <a href="http://www.link-group.eu/about-us-0" title="about link">About Link</a>
+    <h1 class="heading animate fade">This is a heading</h1>
+    <h1 class="top-header">Welcome</h1>
+<p class="top-text">Hello world!</p>
+<p class="top">Hello world again!</p>
+<p class="top text">Hello world once more!</p>
+   
+    <div id="first-div" class="first-class" tabindex="1"></div>
+   <div id="second-div" class="second-class tabindex="2"></div>
+  </body>
+</html>

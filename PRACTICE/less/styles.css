@@ -1,0 +1,6 @@
+@import "common.css";
+@media (min-width: 440px) {
+  .box {
+    width: 600px;
+  }
+}

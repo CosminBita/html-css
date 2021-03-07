@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grid</title>
+    <style>
+      #grid-container {
+        height:100vh;
+        font-family: sans-serif;
+        font-size:1.5em;
+        display: grid;
+        grid-template-columns: auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 5px;
+      }
+      footer {
+        grid-area: 3 / 1 / 4 / 3;
+        text-align: center;
+        background-color: gold;
+      }
+      aside {
+        grid-area: 2 / 2 / 3 / 3;
+        text-align: center;
+        background-color: indianred;
+      }
+      article {
+        grid-area: 2 / 1 / 3 / 2;
+        text-align: center;
+        background-color: indianred;
+      }
+      header {
+        grid-area: 1 / 1 / 2 / 3;
+        text-align: center;
+        background-color: lightcoral;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid-container">
+      <header><h1>HEADER</h1></header>
+      <article>
+        <p>
+          In lecțiile anterioare au fost prezentate tehnicile de bază pentru
+          configurarea lui CSS Grid. Astfel, au fost procesate noţiunile de
+          coloane și rânduri, interval, aranjarea elementelor în funcție de
+          numerele liniilor, zonele și zonele numite... Însă, până acum nu s-a
+          discutat despre alinierea elementelor Grid. Prin urmare, lecția de
+          faţă va fi dedicată acestei tematici. 
+        </p>
+      </article>
+      <aside>
+        <p>
+          Pentru a înțelege corect logica care stă la baza alinierii elementelor
+          Grid, este necesar să se înțeleagă conceptul de axe ale sistemului
+          Grid. Având în vedere că este un sistem bidimensional, CSS Grid are
+          două axe: axa block (verticală), respectiv axa coloanelor; axa inline
+          (orizontală), respectiv axa rândurilor.
+        </p>
+      </aside>
+      <footer>THIS IS FOOTER AND IT TAKES ENTIRE WIDTH</footer>
+    </div>
+  </body>
+</html>

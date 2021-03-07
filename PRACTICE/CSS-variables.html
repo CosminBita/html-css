@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Variables CSS</title>
+    <STYLE>
+        body{
+font-family: sans-serif;
+font-size: 22px;
+}
+ 
+#box-2 {
+--text-color: blue;
+}
+ 
+ 
+#box-3 {
+--text-color: red;
+}
+ 
+#box-1 {
+color: var(--text-color, gray);
+border: solid black;
+}
+ 
+#box-2 {
+color: var(--text-color);
+width: calc(100% * 0.25);
+border: solid black;
+}
+ 
+#box-3 {
+color: var(--text-color);
+}
+ 
+#box-4 {
+color: var(--text-color);
+}
+#image-container{
+    border:blueviolet solid;
+    height: 800px;
+    background-image: url(Central-Park.jpg);
+    background-repeat: no-repeat;
+    background-position: calc(100% - 20px) calc(100% - 20px);
+
+    </STYLE>
+</head>
+<body>
+    <div id="box-1">
+        I am box 1.
+        <div id="box-2">
+        I am box 2.
+        <div id="box-3">I am box 3.</div>
+        <div id="box-4">I am box 4.</div>
+        </div>
+        </div> 
+        <br><br>
+        <div id="image-container">
+        </div>
+</body>
+</html>

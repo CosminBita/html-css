@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Attribute Toolpin</title>
+    <style>
+      span[data-descr] {
+        font-weight: bold;
+        color: green;
+        position:relative;
+        cursor:help;
+      }
+      span[data-descr]:hover::after {
+        content:attr(data-descr);
+        position:absolute;
+        font-weight: normal;
+        background-color:rgba(238, 25, 25, 0.8);
+        left:0;
+        top:24px;
+        color:black;
+        border:solid black;
+        border-radius: 10px;
+        padding:12px;
+
+      }
+      p {
+font-family: sans-serif;
+}
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. In eu sem vel
+      diam finibus lobortis. In rhoncus neque odio, non
+      <span data-descr="Lorem ipsum dolor sit amet">maximus</span> ex pretium
+      quis. Vivamus interdum convallis ex ac efficitur.
+    </p>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blocks Positioning</title>
+    <style>
+      body {
+        background-color: darkgoldenrod;
+      }
+      article {
+        width: 35vw;
+      }
+      #container {
+        width: 50vw;
+        border-right: darkblue solid;
+      }
+      #side {
+        width: 50vw;
+        margin-left: 100px;
+      }
+      #side > p {
+        width: 35vw;
+        
+      }
+      #flexbox {
+          display: flex;
+          flex-direction: row-reverse;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="flexbox">
+      <div id="container">
+        <header><h1>This is your broker</h1></header>
+        <nav>
+          <a href="https://streeteasy.com/profile/847917-cosmin-bita"
+            >Cosmin Bita Streeteasy profile</a
+          >
+          <a
+            href="https://www.corcoran.com/nyc-real-estate/agents/east-side/cosmin-bita/1476"
+            >Cosmin Bita Corcoran profile</a
+          >
+        </nav>
+        <section>
+          <h2>
+            LICENSED RE SALESPERSON <br />
+            LICENSED AS COSMIN BITA<br />
+            OFFICE: EAST SIDE<br />
+            660 Madison Avenue, New York, NY 10065<br />
+            Mobile: (917) 602-5754<br />
+            cosmin.bita@corcoran.com
+          </h2>
+        </section>
+        <article>
+          <p>
+            Cosmin's extensive experience in residential sales has earned him a
+            successful business built completely on repeat customers and
+            referrals. His signature motto is “be swift, be sharp and be
+            strategic” which he lives by every day, embodying it in each one of
+            his transactions. A seasoned professional with 16 years of
+            experience,Cosmin always provides his clients with a thorough
+            education and realistic view of the market. He is patient, very
+            responsive, provides attentive listening and strives for excellence
+            throughout the entire selling or purchasing process.
+          </p>
+        </article>
+      </div>
+      <div id="side">
+        <header>
+          <h2>About Cosmin</h2>
+        </header>
+        <p>
+          Over the years, Cosmin's past clients have provided valuable feedback
+          which helped him to accurately assess what his strengths are in such
+          acompetitive industry. Among the qualities that kept coming up
+          repeatedly, from various clients, the following would be worth
+          mentioning: a clean and straightforward manner, genuine, experienced,
+          always reachable, a new level of personal service (instant, hands-on
+          attitude, rarely delegating tasks), making the client his number one
+          priority, impressive negotiating skills carefully crafted for each
+          particular situation, creativity, never ever giving up until his given
+          mission is accomplished and above all a deep sense of duty and loyalty
+          that often goes beyond the typical real estate agent's
+          responsibilities. As a result, over 90% of his clients are referrals
+          or repeat clients, many of whom have also become his trusted friends.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

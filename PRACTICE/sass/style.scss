@@ -1,0 +1,6 @@
+@import "values";
+@import "colors";
+body {
+    font-size: $main-font-size;
+    color: $primary-light-color;
+}

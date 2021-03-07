@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multimedia</title>
+
+    <style>
+      img {
+        margin: auto;
+        display: block;
+        opacity: 1;
+        width: 100vh;
+      }
+      figure {
+        width: 100vh;
+        background-color: rgb(224, 110, 196);
+        margin: auto;
+      }
+      audio {
+        filter: sepia(20%) saturate(70%) grayscale(1) contrast(99%) invert(12%);
+        width: 200px;
+        height: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <figure>
+      <a href="https://www.centralpark.com/">
+        <img src="Central-Park.jpg" />
+      </a>
+      <figcaption>Photo: Central Park</figcaption>
+    </figure>
+    <div id="Audio" align="center">
+      <audio controls autoplay>
+        <source src="ny-ny.mp3" type="audio/mpeg" />
+      </audio>
+    </div>
+  </body>
+</html>

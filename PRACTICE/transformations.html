@@ -5,33 +5,36 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Transformations</title>
     <style>
+      :root {
+        --primary-color: rgb(30, 88, 214, 0.2);
+      }
       .box {
         width: 180px;
         height: 140px;
-        margin-bottom:100px;
-        background-color: turquoise;
+        margin-bottom: 100px;
+        background-color: var(--primary-color);
         margin-left: auto;
         margin-right: auto;
         padding: 16px;
       }
       #first-div {
-          transform: none;
+        transform: perspective(700px) rotatex(0deg) rotateZ(30deg);
       }
       #second-div {
-          transform: translate(50px, 50px);
+        transform: translate(50%, 50%);
       }
       #third-div {
-          transform: rotate(-20deg);
+        transform: rotate(-5deg);
       }
       #fourth-div {
-          transform: rotate(-20deg);
-          transform-origin: 0px 0px;
+        transform: rotate(2deg);
+        transform-origin: 50% 50%;
       }
       #fifth-div {
-          transform: scale(0.5,2)
+        transform: scale(4, 0.1);
       }
       #sixth-div {
-          transform: skew(20deg,10deg)
+        transform: skew(0, 45deg);
       }
     </style>
   </head>
@@ -42,6 +45,5 @@
     <div id="fourth-div" class="box"></div>
     <div id="fifth-div" class="box"></div>
     <div id="sixth-div" class="box"></div>
-
   </body>
 </html>

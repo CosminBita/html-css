@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calc()Text Responsive</title>
+    <style>
+        p {
+            font-size: calc(13px + (21 - 13) * ((100vw - 320px) / (1600 - 320)));
+        }
+        @media screen and (max-width: 319px) {
+            body {
+                font-size: 10px;
+            }
+        }
+        @media screen and (min-width: 1600px) {
+            body {
+                font-size: 30px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <p>În felul acesta, imaginea de fundal va fi poziționată la 20px față de marginea stângă și de sus. Acum, se pune întrebarea: ce este necesar pentru a se face același lucru, dar în raport cu marginea de jos și din dreapta? În această situație, este necesar să se utilizeze funcția CSS calc():</p>
+</body>
+</html>

@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meme Gallery</title>
+    <style>
+      #grid-container {
+        width: 100vw;
+        height: 100vh;
+        font-family: sans-serif;
+        font-size: 1em;
+        background-image: url("635712015493036278-AmericanFlag.jpg");
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: grid;
+        margin: 0 auto;
+        grid-template-rows: 100px auto auto;
+      }
+      header {
+        text-align: center;
+        height: 10vh;
+        box-sizing: border-box;
+      }
+      .box {
+        background-color: rgb(52, 33, 231, 0.3);
+        width: 10vw;
+        height: 20vh;
+        margin: 3px;
+        background-image: url(placeholder-image.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y:-1vh;
+        box-sizing: border-box;
+        background-size: contain;
+        position: relative;
+        background-image: url(placeholder-image.png);
+        background-repeat: no-repeat;
+        background-position-x: center;
+        background-position-y:-1vh;
+        box-sizing: border-box;
+      }
+      .box span {
+        position: absolute;
+        bottom: 0;
+        background-color: rgba(255, 255, 255, 0.3);
+        width: 100%;
+        font-size: 1em;
+        font-weight: bold;
+        color:black;
+        text-align: center;
+        box-sizing: border-box;
+      }
+
+      #boxes {
+        display: grid;
+        grid-template-rows: auto auto;
+        grid-template-columns: auto auto auto auto auto;
+        justify-content: space-around;
+        gap: 30px;
+        box-sizing: border-box;
+      }
+      article {
+        text-align: center;
+        height: 10vh;
+        box-sizing: border-box;
+      }
+      .box:hover {
+        cursor: pointer;
+      }
+
+
+      }
+      @media screen and (max-width:780px) {
+        #grid-container {
+          width:50vw;
+        }
+        #boxes {
+          display:flex;
+          flex-wrap: wrap;
+        }
+      }
+      @media screen and (max-width:380px) {
+          #grid-container {
+              width:100vw;
+          }
+        header {
+          font-size:0.5em;
+        }
+        #boxes {
+          display:flex;
+          flex-wrap: wrap;
+          flex-direction: column;
+        }
+        .box {
+            width:100vw;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="grid-container">
+      <header>
+        <h1>Meme Gallery</h1>
+      </header>
+      <div id="boxes">
+        <a class="box" href="https://i.imgflip.com/4lglco.jpg" target="_blank"
+          ><span>Joe Biden</span></a
+        >
+        <a
+          class="box"
+          href="http://progressivememetics.org/wp-content/uploads/2018/02/20170910_chameleon.jpg" target="_blank"
+          ><span>Kamala Harris</span></a
+        >
+        <a
+          class="box"
+          href="http://whistleblower-newswire.com/wp-content/uploads/2019/02/image006-9.jpg" target="_blank"
+          ><span>Stacey Abrams</span></a
+        >
+        <a
+          class="box"
+          href="https://thepoliticalinsider.com/wp-content/uploads/2016/04/IMG_1981.jpg" target="_blank"
+          ><span>2A</span></a
+        >
+        <a class="box" href="https://i.imgflip.com/3xfywp.jpg" target="_blank"><span>Masks</span></a>
+        <a class="box" href="https://pbs.twimg.com/media/DD-0vjrUwAEyW1_.jpg:large" target="_blank" ><span>CNN</span></a>
+        <a class="box" href="https://i.imgflip.com/4a1uvy.jpg" target="_blank"><span>Fauci</span></a>
+        <a class="box" href="https://res.cloudinary.com/teepublic/image/private/s--v7k0qnSY--/c_crop,x_10,y_10/c_fit,w_1109/c_crop,g_north_west,h_1260,w_1260,x_-76,y_-109/co_rgb:ffffff,e_colorize,u_Misc:One%20Pixel%20Gray/c_scale,g_north_west,h_1260,w_1260/fl_layer_apply,g_north_west,x_-76,y_-109/bo_105px_solid_white/e_overlay,fl_layer_apply,h_1260,l_Misc:Art%20Print%20Bumpmap,w_1260/e_shadow,x_6,y_6/c_limit,h_1134,w_1134/c_lpad,g_center,h_1260,w_1260/b_rgb:eeeeee/c_limit,f_jpg,h_630,q_90,w_630/v1502912651/production/designs/1826421_1.jpg" target="_blank"><span>Google</span></a>
+        <a class="box" href="https://pics.me.me/when-facebook-bans-you-but-you-have-abackupaccount-14126066.png" target="_blank"><span>Facebook</span></a>
+        <a class="box" href="https://i.imgflip.com/4al57t.jpg" target="_blank"><span>De Blasio</span></a>
+      </div>
+
+     
+    </div>
+  </body>
+</html>
